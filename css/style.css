@@ -10,14 +10,15 @@
 }
 
 img {
-  max-height: 200px;
+  height: 200px;
 }
 
 .row > *,
 .row > * > * {
-  min-width: 10vw;
-  max-width: calc(100vw - 20px);
-  margin: 3vw auto;
+  /* min-width: 10vw;
+  max-width: calc(100vw - 20px); */
+  margin: 10px auto;
+  padding: 10px;
 }
 
 .clear {
@@ -29,7 +30,7 @@ img {
 .row {
   max-width: 992px;
   margin: 0 auto;
-  padding: 10vw;
+  /* padding: 10vw; */
 }
 
 /* BLOCCHI */
@@ -65,11 +66,6 @@ img {
 }
 
 @media screen and (max-width: 768px) {
-
-  img {
-    width: 50%;
-    height: auto;
-  }
 
   #why .row img {
     padding: 5vw;
