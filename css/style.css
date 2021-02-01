@@ -16,9 +16,13 @@ img {
 }
 
 .row > *,
-.row > * > * {
+.row > * > *:not(hr) {
   margin: 10px auto;
   padding: 10px;
+}
+
+hr {
+  margin: 10px auto;
 }
 
 .clear {
@@ -67,9 +71,13 @@ img {
 @media screen and (max-width: 768px) {
 
   .row > *,
-  .row > * > * {
+  .row > * > *:not(hr) {
     margin: 1vw auto;
     padding: 1vw;
+  }
+
+  hr {
+    margin: 1vw auto;
   }
 
   img {
