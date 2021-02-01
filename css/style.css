@@ -10,12 +10,14 @@
 }
 
 img {
-  height: 200px;
+  max-height: 200px;
 }
 
 .row > *,
 .row > * > * {
-  margin: 10px auto;
+  min-width: 10vw;
+  max-width: calc(100vw - 20px);
+  margin: 3vw auto;
 }
 
 .clear {
@@ -27,21 +29,15 @@ img {
 .row {
   max-width: 992px;
   margin: 0 auto;
-  padding: 30px;
+  padding: 10vw;
 }
 
 /* BLOCCHI */
 
-#lezioni .row img {
-  /* per centrare orizzontalmente */
-  display: block;
-  margin: 0 auto;
-}
-
 #why .row img {
   background-color: #428bca;
   border-radius: 50%;
-  padding: 30px
+  padding: 30px;
 }
 
 #lezioni,
@@ -61,5 +57,31 @@ img {
 
   #steps {
     background-color: white;
+  }
+
+  #why .row img {
+    padding: 20px;
+  }
+}
+
+@media screen and (max-width: 768px) {
+
+  img {
+    width: 50%;
+    height: auto;
+  }
+
+  #why .row img {
+    padding: 5vw;
+  }
+
+  h1 {
+    font-size: 4vw;
+  }
+  h3 {
+    font-size: 2.5vw;
+  }
+  body {
+    font-size: 2vw;
   }
 }
