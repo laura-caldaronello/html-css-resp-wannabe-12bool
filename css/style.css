@@ -1,3 +1,5 @@
+/* in questo file ho cancellato tutte le parti relative alle larghezze */
+
 .row {
   width: 992px;
   margin-left: auto;
@@ -6,11 +8,6 @@
 }
 
 /* BLOCCO LEZIONI */
-#lezioni .row>.left,
-#lezioni .row>.right {
-  width: 50%;
-  float: left;
-}
 
 #lezioni .row img {
   /* per centrare orizzontalmente */
@@ -24,12 +21,6 @@
 }
 
 /* BLOCCO STEPS */
-#steps .row>.left,
-#steps .row>.central,
-#steps .row>.right {
-  float: left;
-  width: 33%;
-}
 
 #steps {
   text-align: center;
@@ -38,13 +29,6 @@
 /* BLOCCO PERCHE */
 #why {
   text-align: center;
-}
-
-#why .row>.first,
-#why .row>.second,
-#why .row>.third {
-  width: 100%;
-  margin-top: 80px;
 }
 
 #why .row img {
